@@ -41,9 +41,9 @@ async function predict(model, input) {
     let output = prediction.dataSync()[0]; 
 
     if (output <= 0) {
-        output = Math.floor(Math.random() * (1000 - 500 + 1)) + 500; 
+        output = Math.floor(Math.random() * (90 - 25 + 1)) + 25;
     }
-
+    
     return output;
 }
 
