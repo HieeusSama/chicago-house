@@ -18,7 +18,7 @@ models = {
     'Stacking Regressor': stacking_model
 }
 
-st.title("Ứng Dụng Dự Đoán Giá Nhà")
+st.title("Chicago House")
 
 st.header("Nhập thông tin để dự đoán")
 
