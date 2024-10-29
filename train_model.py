@@ -13,8 +13,7 @@ df = pd.read_csv('chicago_house.csv')
 X = df[['Bedroom', 'Space', 'Room', 'Lot', 'Tax', 'Bathroom', 'Garage', 'Condition']]
 y = df['Price']
 
-imputer = SimpleImputer(strategy='mean')
-X_imputed = imputer.fit_transform(X)
+df = df.dropna()  # Bỏ các dòng có giá trị NaN
 
 X_train, X_test, y_train, y_test = train_test_split(X_imputed, y, test_size=0.2, random_state=42)
 
